@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    overflow-x: hidden;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 32px;
+}
+span{
+    background: -webkit-linear-gradient(rgb(255, 217, 0), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size:larger;
+    
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 21px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:white;
+    transition: all 0.1s;
+    transition: position 0.2s ease;
+}
+.nav ul li a:hover{
+    background: -webkit-linear-gradient(rgb(255, 217, 0), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top:-3px;
+    border-bottom: 2px solid;
+}
+.nav ul li{
+    padding: 16px 32px;
+
+}
+.main {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#image{
+   height:143px;
+   width:201px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(56, 56, 54, 0.5); 
+}
+
+.content{
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.3em;
+    margin-bottom: 32px;
+}
+
+.main-buttons a {
+    margin: 10px;
+    padding: 16px 38px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: rgba(36, 33, 33, 0.776);
+    transition: background-color 0.3s ease;
+}
+.main-buttons a:active{
+    color: white;
+}
+.primary-btn {
+    background: -webkit-linear-gradient(90deg, #45d9f3,#ffffff);
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    transition: transform 0.5s ease;
+}
+
+.primary-btn:hover {
+    background: -webkit-linear-gradient(90deg,#ffffff, #45d9f3);
+    border: 2px solid white;
+}
+.secondary-btn {
+    border: 1px solid white;
+    background-color: #f0e7e7cb; 
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.secondary-btn:hover {
+    background: -webkit-linear-gradient(90deg, #45d9f3,#ffffff);
+    border: 2px solid white;
+}
+
+.features {
+    margin-top: 32px;
+    font-size: 1.2em;
+}
+.booking-form {
+    display: flex;
+    background-color:rgba(0, 183, 255, 0.363);
+    margin:0px 88px;
+    padding: 7px 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    font-size:18px;
+    position: relative;
+    top:-56px;
+    z-index: 1000px;
+    border: 2px solid white;
+}
+.form-group input{
+    display: flex;
+    height: 21px;
+    width: 132px;
+    margin-top: 7px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+.form-group input:focus{
+    border: 1px solid gray;
+    outline: 1px solid gray;;
+}
+.booking-form div{
+    padding: 7px 34px;
+}
+#checkin , #checkout{
+   height: 23px;
+}
+.booking-form button{
+    height: 51px;
+    width: 134px;
+    margin-top: 2px;
+    background-color:rgba(231, 172, 22, 0.8);
+    border: 2px solid white;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.booking-form button:hover{
+    background-color:rgba(231, 172, 22, 0.96);
+}
+.booking-form button:active{
+    color: white;
+}
+#Our-Rooms {
+    padding: 52px;
+    text-align: center;
+    background-color: #fff;
+    margin-top:-88px;
+}
+
+.gallery-title {
+    font-size: 2.5em;
+    margin-bottom: 31px;
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.room {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.room img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.room:hover img {
+    transform: scale(1.1);
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.room:hover .overlay2 {
+    opacity: 1;
+}
+
+.room-details {
+    text-align: center;
+}
+
+.room-details h2 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.room-details p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+#reservation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('Guestroom-RitzCarltonLagunaNiguel-California-CRHotel.webp');
+    background-size: cover;
+    background-position: center;
+}
+#reservation h2{
+    color: rgb(14, 13, 13);
+    position: relative;
+    top:-16px;
+}
+
+.card {
+    background-color: rgba(211, 204, 204, 0.5); 
+    padding:23px;
+    border-radius: 15px;
+    box-shadow: 0 0 21px rgb(15, 15, 15);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.reservation-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.Details {
+    position: relative;
+    text-align: left;
+}
+.Details input , select ,textarea{
+    width: 100%;
+    padding:8px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    color: rgb(14, 13, 13);
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 2px solid rgb(7, 7, 7);
+    outline: none;
+    font-weight:600;
+}
+
+input[type="date"] {
+    font-size: 15px; 
+}
+
+select{
+    font-size: 13px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border:2px solid rgb(14, 13, 13);
+}
+
+.Details label {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    background-color: rgba(92, 88, 88, 0.9);
+    padding: 0px 5px;
+    color:rgb(231, 227, 227);
+}
+input::placeholder{
+    color: black;
+}
+
+.reserve-btn {
+    padding: 15px;
+    font-size: 1.3em;
+    background-color: rgba(255, 255, 255, 0);
+    color: #0c0c0c;
+    border:2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reserve-btn:hover {
+    background-color:rgba(0, 0, 0, 0.8);
+    color: white;
+    border:2px solid white;
+}
+.reserve-btn:active{
+    background-color:rgb(0, 0, 0);
+    color: white;
+    transform: scale(0.9);
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    background: linear-gradient(45deg, #ff6b6b, #fbc531);
+    border-radius: 15px;
+    z-index: -1;
+    opacity: 0.7;
+    filter: blur(20px);
+}
